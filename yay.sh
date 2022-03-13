@@ -27,7 +27,7 @@ echo "\"Yay\" detected! Installing as a regular user! Avoid running"
 echo "it as root!"
 echo ""
 if [ "$whowasi" != "root" ]; then
-    yay -S spotify spicetify-cli
+    yay -S --noconfirm spotify spicetify-cli
     # Check if the process exited without errors. Then proceed if it did.
     if [ "$?" == "0" ]; then
         echo ""

@@ -20,7 +20,7 @@ echo ""
 echo "Installing Spotify and Spicetify-CLI. DON'T CHOOSE GIT VERSION"
 echo "OF SPICETIFY TO SAVE SYSTEM RESOURCES!"
 echo ""
-pacaur -S spotify spicetify-cli
+pacaur -S --noconfirm spotify spicetify-cli
 
 # Check if the process exited without errors. Then proceed if it did.
 if [ "$?" == "0" ]; then
