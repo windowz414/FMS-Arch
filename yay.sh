@@ -33,7 +33,7 @@ if [ "$whowasi" != "root" ]; then
         echo ""
         echo "Installation appears to have went fine. Moving on..."
         echo "including .fms-arch/adjustperms.sh"
-        sudo "export whowasi=${whowasi} && bash ${FMS_ARCH_TOP}/adjustperms.sh"
+        sudo "export whowasi=${whowasi} FMS_ARCH_TOP=${FMS_ARCH_TOP} && bash ${FMS_ARCH_TOP}/adjustperms.sh"
     else
         echo ""
         echo "\"Yay\" exited with an error code different than 0."
