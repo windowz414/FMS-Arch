@@ -27,7 +27,7 @@ if [ "$?" == "0" ]; then
     echo ""
     echo "Installation appears to have went fine. Moving on..."
     echo "including .fms-arch/adjustperms.sh"
-    source ${FMS_ARCH_TOP}/adjustperms.sh
+    bash ${FMS_ARCH_TOP}/adjustperms.sh
 else
     echo ""
     echo "PacAUR exited with an error code different than 0."

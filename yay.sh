@@ -27,13 +27,13 @@ echo "\"Yay\" detected! Installing as a regular user! Avoid running"
 echo "it as root!"
 echo ""
 if [ "$whowasi" != "root" ]; then
-    su ${whowasi} -c "bash -c \"yay -S spotify spicetify-cli\""
+    yay -S spotify spicetify-cli
     # Check if the process exited without errors. Then proceed if it did.
     if [ "$?" == "0" ]; then
         echo ""
         echo "Installation appears to have went fine. Moving on..."
         echo "including .fms-arch/adjustperms.sh"
-        source ${FMS_ARCH_TOP}/adjustperms.sh
+        sudo bash ${FMS_ARCH_TOP}/adjustperms.sh
     else
         echo ""
         echo "\"Yay\" exited with an error code different than 0."

@@ -21,4 +21,4 @@ chmod a+wr /opt/spotify/Apps -R
 
 echo "From now on, installation will continue as ${whowasi}."
 echo "including .fms-arch/install_theme.sh"
-su ${whowasi} -c "source ${FMS_ARCH_TOP}/install_theme.sh"
+su ${whowasi} -c "bash ${FMS_ARCH_TOP}/install_theme.sh"

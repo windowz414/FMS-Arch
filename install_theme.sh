@@ -27,4 +27,4 @@ mkdir -p ../Extensions
 cp Fluent/fluent.js ../Extensions/.
 
 echo "including .fms-arch/config_theme.sh"
-source ${FMS_ARCH_TOP}/config_theme.sh
+bash ${FMS_ARCH_TOP}/config_theme.sh
